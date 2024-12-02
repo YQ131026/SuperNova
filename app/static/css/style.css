@@ -1,0 +1,78 @@
+/* 自定义样式 */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.badge {
+    min-width: 60px;
+}
+
+.btn-sm {
+    margin-right: 0.25rem;
+}
+
+.bi {
+    margin-right: 0.25rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .table-responsive {
+        margin: 0 -15px;
+    }
+    
+    .btn-sm {
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* 添加到现有的 style.css 文件末尾 */
+
+/* 服务管理页面样式 */
+#logContent {
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.modal-lg {
+    max-width: 800px;
+}
+
+.service-action-buttons .btn {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+/* 状态徽章样式 */
+.badge {
+    font-size: 0.85rem;
+    padding: 0.35em 0.65em;
+    text-transform: uppercase;
+}
+
+/* 表格响应式优化 */
+@media (max-width: 768px) {
+    .table td, .table th {
+        white-space: nowrap;
+    }
+    
+    .btn-sm {
+        padding: 0.25rem 0.4rem;
+        font-size: 0.75rem;
+    }
+    
+    .modal-lg {
+        max-width: 95%;
+        margin: 10px;
+    }
+}

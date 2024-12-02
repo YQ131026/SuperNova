@@ -1,0 +1,30 @@
+# 主机配置文件
+# 格式说明:
+# hosts:            # 主机配置根节点
+#   host_id:        # 主机唯一标识符
+#     name:         # 主机名称
+#     ip:           # IP地址
+#     port:         # Supervisor XML-RPC 端口
+#     username:     # Supervisor 用户名
+#     password:     # Supervisor 密码
+#     description:  # 主机描述（可选）
+#     tags:         # 主机标签（可选）
+
+hosts:
+  dev_ai:
+    name: "AI开发服务器"
+    ip: "106.75.77.78"
+    port: 9001
+    username: "dev1"
+    password: "xhLWGuzGbF6"
+    description: "AI开发和测试服务器"
+    tags: ["dev", "ai"]
+
+  prod_ai:
+    name: "AI生产服务器"
+    ip: "106.75.77.78"
+    port: 9001
+    username: "dev1"
+    password: "xhLWGuzGbF6"
+    description: "AI服务生产环境"
+    tags: ["prod", "ai"]

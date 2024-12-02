@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}服务管理{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- 添加提示信息区域 -->
+    <div class="alert alert-danger d-none" id="error-alert" role="alert"></div>
+    <div class="alert alert-success d-none" id="success-alert" role="alert"></div>
+    
+    <div class="row mb-3">
+        <div class="col">
+            <h1>服务管理</h1>
+        </div>
+    </div>
+
+    <!-- 主机选择器 -->
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <select class="form-select" id="host-select">
+                <option value="">选择主机...</option>
+                {% for host in hosts %}
+                <option value="{{ host.id }}" {% if host.id == default_host_id %}selected{% endif %}>
+                    {{ host.name }} ({{ host.ip }})
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" id="refresh-btn">
+                <i class="bi bi-arrow-clockwise"></i> 刷新服务列表
+            </button>
+        </div>
+    </div>
+
+    <!-- 服务列表卡片 -->
+    <div class="card">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title">服务列表</h5>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-sm batch-operation" data-action="start" disabled>
+                        <i class="bi bi-play-fill"></i> 批量启动
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm batch-operation" data-action="stop" disabled>
+                        <i class="bi bi-stop-fill"></i> 批量停止
+                    </button>
+                    <button type="button" class="btn btn-warning btn-sm batch-operation" data-action="restart" disabled>
+                        <i class="bi bi-arrow-clockwise"></i> 批量重启
+                    </button>
+                </div>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th style="width: 40px">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="select-all">
+                                </div>
+                            </th>
+                            <th>服务名称</th>
+                            <th>状态</th>
+                            <th>描述</th>
+                            <th>PID</th>
+                            <th class="text-end">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="services-list">
+                        <!-- 服务列表将通过 JavaScript 动态加载 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/services.js') }}"></script>
+{% endblock %}
