@@ -610,3 +610,59 @@ class SupervisorService:
             error_msg = f"Failed to {action} process {process_name}: {str(e)}"
             self.logger.error(error_msg)
             raise Exception(error_msg)
+
+    def update_host(self, host_id: str, host_data: Dict[str, Any]) -> bool:
+        """更新主机信息
+        
+        Args:
+            host_id: 主机ID
+            host_data: 更新的主机信息
+            
+        Returns:
+            bool: 是否更新成功
+        """
+        try:
+            # 获取当前配置
+            hosts = self.config_manager.get_all_hosts()
+            
+            # 检查主机是否存在
+            if host_id not in hosts:
+                raise ValueError(f"Host {host_id} not found")
+            
+            # 验证必要字段
+            required_fields = ['name', 'ip', 'port', 'username']
+            if not all(field in host_data for field in required_fields):
+                missing = [field for field in required_fields if field not in host_data]
+                raise ValueError(f"Missing required fields: {', '.join(missing)}")
+            
+            # 验证端口
+            try:
+                port = int(host_data['port'])
+                if not (1 <= port <= 65535):
+                    raise ValueError(f"Invalid port number: {port}")
+                host_data['port'] = port
+            except (ValueError, TypeError):
+                raise ValueError(f"Invalid port value: {host_data['port']}")
+            
+            # 更新主机信息，保留原有密码（如果没有提供新密码）
+            current_host = hosts[host_id]
+            if not host_data.get('password'):
+                host_data['password'] = current_host['password']
+            
+            # 保留其他可选字段
+            for field in ['description', 'tags']:
+                if field in current_host and field not in host_data:
+                    host_data[field] = current_host[field]
+            
+            # 更新主机信息
+            hosts[host_id] = host_data
+            
+            # 保存配置
+            if not self.config_manager.save_hosts(hosts):
+                raise Exception("Failed to save configuration")
+            
+            return True
+            
+        except Exception as e:
+            self.logger.error(f"Failed to update host {host_id}: {str(e)}")
+            return False

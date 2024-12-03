@@ -159,6 +159,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 body: JSON.stringify(hostData)
             });
 
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
             const data = await response.json();
             
             if (!data.success) {

@@ -306,3 +306,61 @@ def get_logs(process_name):
             error=error_msg,
             status_code=HTTPStatus.INTERNAL_SERVER_ERROR
         )
+
+@bp.route('/hosts/<host_id>', methods=['GET', 'PUT', 'DELETE'])
+def manage_host(host_id):
+    """管理主机（获取、更新、删除）"""
+    try:
+        if request.method == 'GET':
+            # 获取主机信息
+            host = current_app.supervisor_service.get_host(host_id)
+            if not host:
+                return make_api_response(
+                    error="Host not found",
+                    status_code=HTTPStatus.NOT_FOUND
+                )
+            return make_api_response(
+                data={'host': sanitize_host_info(host)},
+                message='Successfully retrieved host'
+            )
+            
+        elif request.method == 'PUT':
+            # 更新主机信息
+            host_data = request.get_json()
+            if not host_data:
+                return make_api_response(
+                    error="No data provided",
+                    status_code=HTTPStatus.BAD_REQUEST
+                )
+                
+            success = current_app.supervisor_service.update_host(host_id, host_data)
+            if not success:
+                return make_api_response(
+                    error="Failed to update host",
+                    status_code=HTTPStatus.INTERNAL_SERVER_ERROR
+                )
+                
+            return make_api_response(
+                message='Successfully updated host'
+            )
+            
+        elif request.method == 'DELETE':
+            # 删除主机
+            success = current_app.supervisor_service.delete_host(host_id)
+            if not success:
+                return make_api_response(
+                    error="Failed to delete host",
+                    status_code=HTTPStatus.INTERNAL_SERVER_ERROR
+                )
+                
+            return make_api_response(
+                message='Successfully deleted host'
+            )
+            
+    except Exception as e:
+        error_msg = f"Failed to manage host: {str(e)}"
+        current_app.logger.error(error_msg)
+        return make_api_response(
+            error=error_msg,
+            status_code=HTTPStatus.INTERNAL_SERVER_ERROR
+        )

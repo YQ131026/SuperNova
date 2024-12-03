@@ -130,9 +130,17 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
+        // 添加全选功能
+        const selectAllCheckbox = document.getElementById('select-all');
+        selectAllCheckbox.addEventListener('change', function() {
+            const checkboxes = document.querySelectorAll('.service-checkbox');
+            checkboxes.forEach(checkbox => checkbox.checked = this.checked);
+            updateBatchButtons(); // 更新批量操作按钮状态
+        });
+
         processes.forEach(process => {
-            console.log('Processing process:', process);
             const row = document.createElement('tr');
+            row.style.cursor = 'pointer'; // 添加手型光标
             
             // 状态样式
             let statusBadge = '';
@@ -148,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             row.innerHTML = `
-                <td>
+                <td onclick="event.stopPropagation()">
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input service-checkbox" value="${process.name}">
                     </div>
@@ -160,24 +168,55 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td class="text-end">
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-sm btn-success" 
-                                onclick="controlProcess('${hostSelect.value}', '${process.name}', 'start')" 
+                                onclick="event.stopPropagation(); controlProcess('${hostSelect.value}', '${process.name}', 'start')" 
                                 ${process.statename === 'RUNNING' ? 'disabled' : ''}>
                             <i class="bi bi-play-fill"></i> 启动
                         </button>
                         <button type="button" class="btn btn-sm btn-danger" 
-                                onclick="controlProcess('${hostSelect.value}', '${process.name}', 'stop')" 
+                                onclick="event.stopPropagation(); controlProcess('${hostSelect.value}', '${process.name}', 'stop')" 
                                 ${process.statename === 'STOPPED' ? 'disabled' : ''}>
                             <i class="bi bi-stop-fill"></i> 停止
                         </button>
                         <button type="button" class="btn btn-sm btn-warning" 
-                                onclick="controlProcess('${hostSelect.value}', '${process.name}', 'restart')">
+                                onclick="event.stopPropagation(); controlProcess('${hostSelect.value}', '${process.name}', 'restart')">
                             <i class="bi bi-arrow-clockwise"></i> 重启
                         </button>
                     </div>
                 </td>
             `;
+
+            // 添加行点击事件
+            row.addEventListener('click', function(e) {
+                // 如果点击的是按钮或复选框，不处理
+                if (e.target.closest('.btn-group') || e.target.closest('.form-check')) {
+                    return;
+                }
+                const checkbox = this.querySelector('.service-checkbox');
+                checkbox.checked = !checkbox.checked;
+                
+                // 检查是否所有复选框都被选中
+                const allCheckboxes = document.querySelectorAll('.service-checkbox');
+                const allChecked = Array.from(allCheckboxes).every(cb => cb.checked);
+                selectAllCheckbox.checked = allChecked;
+                
+                updateBatchButtons(); // 更新批量操作按钮状态
+            });
+
             processTableBody.appendChild(row);
         });
+
+        // 监听复选框变化
+        processTableBody.addEventListener('change', function(e) {
+            if (e.target.classList.contains('service-checkbox')) {
+                const allCheckboxes = document.querySelectorAll('.service-checkbox');
+                const allChecked = Array.from(allCheckboxes).every(cb => cb.checked);
+                selectAllCheckbox.checked = allChecked;
+                updateBatchButtons(); // 更新批量操作按钮状态
+            }
+        });
+
+        // 初始化批量操作按钮状态
+        updateBatchButtons();
     }
 
     // 清空进程表格
@@ -205,6 +244,40 @@ document.addEventListener('DOMContentLoaded', function() {
             successAlert.classList.add('d-none');
         }, 3000);
     }
+
+    // 在 updateProcessTable 函数中添加更新批量操作按钮状态的功能
+    function updateBatchButtons() {
+        const checkedBoxes = document.querySelectorAll('.service-checkbox:checked');
+        const batchButtons = document.querySelectorAll('.batch-operation');
+        
+        // 更新批量操作按钮的禁用状态
+        batchButtons.forEach(button => {
+            button.disabled = checkedBoxes.length === 0;
+        });
+    }
+
+    // 添加批量操作功能
+    document.querySelectorAll('.batch-operation').forEach(button => {
+        button.addEventListener('click', async function() {
+            const action = this.dataset.action;
+            const checkedBoxes = document.querySelectorAll('.service-checkbox:checked');
+            const hostId = hostSelect.value;
+            
+            if (!hostId || checkedBoxes.length === 0) return;
+
+            const processNames = Array.from(checkedBoxes).map(cb => cb.value);
+            
+            try {
+                for (const processName of processNames) {
+                    await controlProcess(hostId, processName, action);
+                }
+                showSuccess(`Successfully ${action}ed selected processes`);
+            } catch (error) {
+                console.error(`Error in batch ${action}:`, error);
+                showError(`Failed to ${action} some processes`);
+            }
+        });
+    });
 
     // 初始化页面 - 如果有选中的主机，立即加载其服务列表
     console.log('Initializing services page');
