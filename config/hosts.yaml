@@ -1,15 +1,8 @@
 hosts:
   dev_ai:
-    name: AI-Dev
     description: AI开发和测试服务器
     ip: 106.75.77.78
+    name: AI-Dev1
+    password: xhLWGuzGbF6
     port: 9001
     username: dev1
-    password: xhLWGuzGbF6
-  prod_ai:
-    name: AI-Prod
-    description: AI服务生产环境
-    ip: 106.75.77.78
-    port: 9001
-    username: dev1
-    password: xhLWGuzGbF6

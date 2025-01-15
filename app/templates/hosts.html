@@ -3,48 +3,50 @@
 {% block title %}主机管理{% endblock %}
 
 {% block content %}
-<div class="container">
-    <h1 class="mt-4">主机管理</h1>
-    <div class="row mt-4">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#add-host-modal">
-                        添加主机
-                    </button>
-                    <div class="table-responsive">
-                        <table class="table table-hover" id="hosts-table">
-                            <thead>
-                                <tr>
-                                    <th>名称</th>
-                                    <th>IP地址</th>
-                                    <th>端口</th>
-                                    <th>用户名</th>
-                                    <th>状态</th>
-                                    <th>操作</th>
-                                </tr>
-                            </thead>
-                            <tbody id="hosts-list">
-                                <!-- 主机列表将通过 JavaScript 动态加载 -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+<div class="container-fluid">
+    <!-- 提示信息区域 -->
+    <div class="alert alert-danger d-none" id="error-alert" role="alert"></div>
+    <div class="alert alert-success d-none" id="success-alert" role="alert"></div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <h1>主机管理</h1>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>主机名称</th>
+                            <th>IP地址</th>
+                            <th>端口</th>
+                            <th>用户名</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="hosts-list">
+                        <!-- 主机列表将通过JavaScript动态加载 -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
 
-<!-- 添加主机模态框 -->
-<div class="modal fade" id="add-host-modal" tabindex="-1">
+<!-- 编辑主机模态框 -->
+<div class="modal fade" id="edit-host-modal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">添加主机</h5>
+                <h5 class="modal-title">编辑主机</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <form id="add-host-form">
+                <form id="edit-host-form">
                     <div class="mb-3">
                         <label class="form-label">主机名称</label>
                         <input type="text" class="form-control" name="name" required>
@@ -63,54 +65,14 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">密码</label>
-                        <input type="password" class="form-control" name="password" required>
+                        <input type="password" class="form-control" name="password">
+                        <small class="form-text text-muted">留空表示不修改密码</small>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary" id="add-host-submit">添加</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 编辑主机模态框 -->
-<div class="modal fade" id="edit-host-modal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">编辑主机</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <form id="edit-host-form">
-                    <input type="hidden" name="host_id">
-                    <div class="mb-3">
-                        <label class="form-label">名称</label>
-                        <input type="text" class="form-control" name="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">IP地址</label>
-                        <input type="text" class="form-control" name="ip" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">端口</label>
-                        <input type="number" class="form-control" name="port" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">用户名</label>
-                        <input type="text" class="form-control" name="username" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">密码</label>
-                        <input type="password" class="form-control" name="password" placeholder="留空则保持原密码不变">
-                    </div>
-                    <div class="text-end">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                        <button type="submit" class="btn btn-primary">保存</button>
-                    </div>
-                </form>
+                <button type="button" class="btn btn-primary" id="edit-host-submit">保存</button>
             </div>
         </div>
     </div>
