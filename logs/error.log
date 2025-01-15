@@ -2019,3 +2019,7 @@ ConnectionError: Failed to verify connection: 'AuthTransport' object has no attr
 [2024-12-02 18:32:40,385] ERROR in api: Failed to get logs: Failed to get process log: not well-formed (invalid token): line 6, column 20
 [2024-12-02 18:33:06,375] ERROR in supervisor_service: Failed to get stdout log for process dy_live: not well-formed (invalid token): line 6, column 20
 [2024-12-02 18:33:06,377] ERROR in api: Failed to get logs: Failed to get process log: not well-formed (invalid token): line 6, column 20
+[2025-01-15 15:51:36,103] ERROR in supervisor_service: Failed to get stdout log for process dy_live: not well-formed (invalid token): line 6, column 20
+[2025-01-15 15:51:36,104] ERROR in api: Failed to get logs: Failed to get process log: not well-formed (invalid token): line 6, column 20
+[2025-01-15 15:52:12,389] ERROR in supervisor_service: Failed to get stdout log for process dy_live: not well-formed (invalid token): line 6, column 20
+[2025-01-15 15:52:12,390] ERROR in api: Failed to get logs: Failed to get process log: not well-formed (invalid token): line 6, column 20

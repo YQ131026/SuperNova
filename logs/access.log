@@ -349,3 +349,77 @@
 [2024-12-03 11:13:57,704] INFO in _internal: 127.0.0.1 - - [03/Dec/2024 11:13:57] "GET /bootstrap/static/js/bootstrap.min.js HTTP/1.1" 200 -
 [2024-12-03 11:13:57,705] INFO in _internal: 127.0.0.1 - - [03/Dec/2024 11:13:57] "GET /bootstrap/static/css/bootstrap.min.css.map HTTP/1.1" 200 -
 [2024-12-03 11:13:57,728] INFO in _internal: 127.0.0.1 - - [03/Dec/2024 11:13:57] "GET /bootstrap/static/js/bootstrap.min.js.map HTTP/1.1" 200 -
+[2025-01-15 15:50:42,208] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.1.1.143:5000
+[2025-01-15 15:50:42,210] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-15 15:50:42,211] INFO in _internal:  * Restarting with stat
+[2025-01-15 15:50:42,356] WARNING in _internal:  * Debugger is active!
+[2025-01-15 15:50:42,364] INFO in _internal:  * Debugger PIN: 287-585-076
+[2025-01-15 15:50:54,082] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:54] "GET / HTTP/1.1" 200 -
+[2025-01-15 15:50:54,358] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:54] "[36mGET /bootstrap/static/umd/popper.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:50:54,367] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:54] "[36mGET /bootstrap/static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:50:54,379] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:54] "GET /static/css/style.css HTTP/1.1" 200 -
+[2025-01-15 15:50:54,468] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:54] "[36mGET /bootstrap/static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:50:56,797] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:56] "GET /services HTTP/1.1" 200 -
+[2025-01-15 15:50:56,880] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:56] "[36mGET /bootstrap/static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:50:56,888] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:50:56,893] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:56] "[36mGET /bootstrap/static/umd/popper.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:50:56,896] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:56] "[36mGET /bootstrap/static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:50:56,900] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:56] "GET /static/js/services.js HTTP/1.1" 200 -
+[2025-01-15 15:50:57,332] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:50:57] "GET /api/processes?host_id=dev_ai HTTP/1.1" 200 -
+[2025-01-15 15:51:07,723] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:07] "POST /api/processes/dy_live/restart HTTP/1.1" 200 -
+[2025-01-15 15:51:08,872] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:08] "GET /api/processes?host_id=dev_ai HTTP/1.1" 200 -
+[2025-01-15 15:51:15,134] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:15] "GET /api/processes?host_id=dev_ai HTTP/1.1" 200 -
+[2025-01-15 15:51:16,666] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:16] "GET /hosts HTTP/1.1" 200 -
+[2025-01-15 15:51:16,848] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:16] "[36mGET /bootstrap/static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:51:16,851] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:51:16,852] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:16] "[36mGET /bootstrap/static/umd/popper.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:51:16,881] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:16] "[36mGET /bootstrap/static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:51:16,897] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:16] "GET /static/js/hosts.js HTTP/1.1" 200 -
+[2025-01-15 15:51:17,156] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:17] "GET /api/hosts HTTP/1.1" 200 -
+[2025-01-15 15:51:31,908] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:31] "GET /logs HTTP/1.1" 200 -
+[2025-01-15 15:51:32,027] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:51:32,027] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:32] "[36mGET /bootstrap/static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:51:32,027] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:32] "[36mGET /bootstrap/static/umd/popper.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:51:32,035] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:32] "[36mGET /bootstrap/static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:51:32,051] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:32] "GET /static/js/logs.js HTTP/1.1" 200 -
+[2025-01-15 15:51:34,404] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:34] "GET /api/processes?host_id=dev_ai HTTP/1.1" 200 -
+[2025-01-15 15:51:36,104] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:36] "[35m[1mGET /api/logs/dy_live?host_id=dev_ai&type=stdout HTTP/1.1[0m" 500 -
+[2025-01-15 15:51:40,055] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:40] "GET /api/logs/dy_live?host_id=dev_ai&type=stderr HTTP/1.1" 200 -
+[2025-01-15 15:51:52,838] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:52] "GET /api/processes?host_id=prod_ai HTTP/1.1" 200 -
+[2025-01-15 15:51:56,430] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:56] "GET /api/logs/ks_danmu?host_id=prod_ai&type=stderr HTTP/1.1" 200 -
+[2025-01-15 15:51:59,237] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:51:59] "GET /api/logs/omnibot?host_id=prod_ai&type=stderr HTTP/1.1" 200 -
+[2025-01-15 15:52:01,414] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:01] "GET /api/logs/wx_live?host_id=prod_ai&type=stderr HTTP/1.1" 200 -
+[2025-01-15 15:52:03,215] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:03] "GET /api/processes?host_id=dev_ai HTTP/1.1" 200 -
+[2025-01-15 15:52:05,252] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:05] "GET /api/logs/dy_live?host_id=dev_ai&type=stderr HTTP/1.1" 200 -
+[2025-01-15 15:52:08,614] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:08] "GET /api/logs/ks_danmu?host_id=dev_ai&type=stderr HTTP/1.1" 200 -
+[2025-01-15 15:52:10,774] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:10] "GET /api/logs/ks_danmu?host_id=dev_ai&type=stdout HTTP/1.1" 200 -
+[2025-01-15 15:52:12,391] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:12] "[35m[1mGET /api/logs/dy_live?host_id=dev_ai&type=stdout HTTP/1.1[0m" 500 -
+[2025-01-15 15:52:18,064] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:18] "GET /api/logs/metaman_api?host_id=dev_ai&type=stdout HTTP/1.1" 200 -
+[2025-01-15 15:52:24,282] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:24] "GET /api/logs/omnibot?host_id=dev_ai&type=stdout HTTP/1.1" 200 -
+[2025-01-15 15:52:32,644] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:32] "GET /api/logs/omnibot_ws?host_id=dev_ai&type=stdout HTTP/1.1" 200 -
+[2025-01-15 15:52:34,847] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:34] "GET /api/logs/wx_live?host_id=dev_ai&type=stdout HTTP/1.1" 200 -
+[2025-01-15 15:52:40,098] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:40] "GET /services HTTP/1.1" 200 -
+[2025-01-15 15:52:40,256] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:40,257] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:40] "[36mGET /bootstrap/static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:40,258] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:40] "[36mGET /bootstrap/static/umd/popper.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:40,270] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:40] "[36mGET /bootstrap/static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:40,275] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:40] "[36mGET /static/js/services.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:40,697] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:40] "GET /api/processes?host_id=dev_ai HTTP/1.1" 200 -
+[2025-01-15 15:52:44,237] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:44] "GET /services HTTP/1.1" 200 -
+[2025-01-15 15:52:44,311] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:44,312] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:44] "[36mGET /bootstrap/static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:44,335] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:44] "[36mGET /bootstrap/static/umd/popper.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:44,341] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:44] "[36mGET /bootstrap/static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:44,346] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:44] "[36mGET /static/js/services.js HTTP/1.1[0m" 304 -
+[2025-01-15 15:52:44,571] INFO in _internal: 127.0.0.1 - - [15/Jan/2025 15:52:44] "GET /api/processes?host_id=dev_ai HTTP/1.1" 200 -
+[2025-01-15 15:53:51,964] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.1.1.143:5000
+[2025-01-15 15:53:51,964] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-15 15:53:51,965] INFO in _internal:  * Restarting with stat
+[2025-01-15 15:53:52,109] WARNING in _internal:  * Debugger is active!
+[2025-01-15 15:53:52,115] INFO in _internal:  * Debugger PIN: 287-585-076

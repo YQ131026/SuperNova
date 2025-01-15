@@ -12438,3 +12438,203 @@ ConnectionError: Failed to verify connection: 'AuthTransport' object has no attr
 [2024-12-03 11:14:31,678] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
 [2024-12-03 11:14:31,703] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
 [2024-12-03 11:14:31,716] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:42,170] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:42,170] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:42,206] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:42,206] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:42,226] INFO in monitor: Host dev_ai status changed to: online
+[2025-01-15 15:50:42,244] INFO in monitor: Host prod_ai status changed to: online
+[2025-01-15 15:50:42,336] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:42,336] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:42,363] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:42,364] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:42,374] INFO in monitor: Host dev_ai status changed to: online
+[2025-01-15 15:50:42,374] INFO in monitor: Host prod_ai status changed to: online
+[2025-01-15 15:50:56,574] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:56,634] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:56,656] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:56,714] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:56,926] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:56,990] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:57,042] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:57,172] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:50:57,223] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:50:57,291] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:05,830] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:05,899] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:08,739] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:08,802] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:08,812] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:08,829] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:08,838] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:08,861] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:14,781] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:14,856] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:14,893] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:14,981] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:15,027] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:15,092] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:16,901] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:16,976] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:17,022] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:17,101] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:31,628] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:31,717] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:31,756] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:31,847] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:34,172] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:34,229] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:34,252] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:34,301] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:34,331] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:34,389] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:35,698] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:35,805] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:35,855] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:35,926] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:35,971] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:36,063] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:36,103] ERROR in supervisor_service: Failed to get stdout log for process dy_live: not well-formed (invalid token): line 6, column 20
+[2025-01-15 15:51:36,104] ERROR in api: Failed to get logs: Failed to get process log: not well-formed (invalid token): line 6, column 20
+[2025-01-15 15:51:39,646] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:39,717] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:39,760] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:39,871] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:39,910] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:39,992] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:42,254] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:42,256] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:42,334] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:42,335] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:42,380] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:42,381] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:42,404] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:42,405] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:52,388] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:52,525] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:52,555] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:52,629] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:52,653] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:52,764] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:56,298] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:56,336] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:56,349] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:56,384] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:56,393] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:56,413] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:58,765] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:58,855] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:58,914] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:59,002] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:51:59,053] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:51:59,134] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:01,155] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:01,241] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:01,269] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:01,289] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:01,300] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:01,368] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:02,933] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:03,013] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:03,056] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:03,113] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:03,153] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:03,204] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:04,947] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:05,001] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:05,030] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:05,092] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:05,134] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:05,203] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:08,361] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:08,380] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:08,396] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:08,418] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:08,468] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:08,567] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:10,446] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:10,487] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:10,523] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:10,613] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:10,629] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:10,674] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:12,278] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:12,318] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:12,327] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:12,347] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:12,358] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:12,378] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:12,389] ERROR in supervisor_service: Failed to get stdout log for process dy_live: not well-formed (invalid token): line 6, column 20
+[2025-01-15 15:52:12,390] ERROR in api: Failed to get logs: Failed to get process log: not well-formed (invalid token): line 6, column 20
+[2025-01-15 15:52:17,895] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:17,933] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:17,951] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:17,974] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:17,984] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:18,010] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:24,004] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:24,097] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:24,141] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:24,190] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:24,212] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:24,252] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:32,551] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:32,571] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:32,582] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:32,598] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:32,609] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:32,631] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:34,488] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:34,553] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:34,578] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:34,660] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:34,693] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:34,776] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:39,879] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:39,965] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:40,012] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:40,082] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:40,279] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:40,413] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:40,464] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:40,522] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:40,572] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:40,649] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:42,366] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:42,370] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:42,420] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:42,420] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:42,420] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:42,421] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:42,491] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:42,491] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:44,175] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:44,194] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:44,203] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:44,223] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:44,354] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:44,416] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:44,438] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:44,467] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:52:44,491] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:52:44,544] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:42,464] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:53:42,467] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:53:42,542] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:53:42,543] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:53:42,587] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:42,588] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:42,670] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:42,671] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:51,922] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:53:51,923] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:53:51,949] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:51,950] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:51,961] INFO in monitor: Host prod_ai status changed to: online
+[2025-01-15 15:53:51,961] INFO in monitor: Host dev_ai status changed to: online
+[2025-01-15 15:53:52,092] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:53:52,092] INFO in supervisor_service: Creating supervisor proxy for 106.75.77.78:9001
+[2025-01-15 15:53:52,118] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:52,118] INFO in supervisor_service: Successfully connected to supervisor at 106.75.77.78:9001
+[2025-01-15 15:53:52,129] INFO in monitor: Host prod_ai status changed to: online
+[2025-01-15 15:53:52,130] INFO in monitor: Host dev_ai status changed to: online
